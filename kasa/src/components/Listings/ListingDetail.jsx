@@ -1,10 +1,10 @@
 import React from 'react'
-import listLogement from '../../datas/listLogements.json'
+import listListings from '../../datas/listListings.json'
 
-function LogementDetail() {
+function ListingDetail() {
   return (
     <div>LogementDetail</div>
   )
 }
 
-export default LogementDetail
+export default ListingDetail

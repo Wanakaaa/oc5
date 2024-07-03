@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import listLogements from '../../datas/listLogements.json'
+import listListings from '../../datas/listListings.json'
+import './Listings.scss';
 
-function Logements() {
+function Listings() {
   return (
-    <div>Logements
-        <ul>
-            {listLogements.map((logement) => (
-                <li key={logement.id}>
-                    <Link to={`/logements/${logement.id}`}>
-                        {logement.title}
+    <div className='listings-wrapper'>Logements
+        <ul className='listings-container'>
+            {listListings.map((listing) => (
+                <li key={listing.id} className='listing'>
+                    <Link to={`/listings/${listing.id}`}>
+                        <h2>{listing.title}</h2>
                     </Link>
                 </li>
             ))}
@@ -18,4 +19,4 @@ function Logements() {
   )
 }
 
-export default Logements
+export default Listings

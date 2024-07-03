@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.scss';
 import image from '../../assets/IMG.png'
-import Logements from '../Listings/Listings';
+import Listings from '../Listings/Listings';
 
 function Home() {
   const bannerText = "Chez vous, partout et ailleurs";
@@ -13,8 +13,8 @@ function Home() {
         <div class="bannerText">{bannerText}</div>
       </div>
 
-      <div className='logements'>
-        <Logements />
+      <div className='listings'>
+        <Listings />
       </div>
         
     </div>
