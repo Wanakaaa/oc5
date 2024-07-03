@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.bannerContainer {
+
+}
+
+.banner-home{
+    position: relative;
+    height: 223px;
+    width: 100%;
+    border: 1px solid $blackColor;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .bannerText {
+        display: flex;
+        // text-wrap: nowrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        text-shadow: -1px -1px 0 $blackColor,
+                    1px -1px 0 $blackColor,
+                    -1px 1px 0 $blackColor,
+                    1px 1px 0 $blackColor
+    }
+
+
+}
