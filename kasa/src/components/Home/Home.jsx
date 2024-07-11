@@ -2,21 +2,18 @@ import React from 'react'
 import './Home.scss';
 import image from '../../assets/IMG.png'
 import Listings from '../Listings/Listings';
+import Banner from './Banner'
 
 function Home() {
-  const bannerText = "Chez vous, partout et ailleurs";
 
   return (
     <div>
-      <div className="banner-home">
-        <img src={image} alt="falaise" />
-        <div class="bannerText">{bannerText}</div>
+      <div>
+        <Banner image={image}>Chez vous, partout et ailleurs</Banner>
       </div>
-
       <div className='listings'>
         <Listings />
-      </div>
-        
+      </div> 
     </div>
   )
 }

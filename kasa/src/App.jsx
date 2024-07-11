@@ -6,6 +6,10 @@ import Header from './components/Header/Header';
 import ListingDetail from './components/Listings/ListingDetail';
 import Footer from './components/Footer/Footer';
 import Erreur404 from './components/Error404/Error404';
+import Fruits from "./components/exo/Fruits"
+import ConditionalComponent from './components/exo/ConditionalComponent';
+import Message from './components/exo/Message';
+import Counter from './components/exo/Counter';
 
 function App() {
   return (
@@ -14,8 +18,9 @@ function App() {
     <Header />
     <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
+        <Route path='/About' element={<About />}/>
         <Route path='/listings/:id' element={<ListingDetail />}/>
+        <Route path='/exo' element={<Counter />}/>
         <Route path='*' element={<Erreur404 />} />
     </Routes>
     </div>

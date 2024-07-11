@@ -1,34 +1,5 @@
 @import '../../styles/variables';
 
-// ul {
-//     padding: 0;
-//     margin: 0;
-// }
-
-// li {
-//     list-style-type: none;
-// }
-
-// .listings-container {
-//     width: 1220px;
-//     padding: 50px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-evenly;
-//     border: 2px solid blue;
-//     gap: 50px;
-
-
-// }
-
-// .listing {
-//     width: 340px;
-//     height: 340px;
-//     background: $redColor;
-//     border: 2px solid green;
-//     border-radius: 10px;
-// }
-
 .listings-wrapper {
     // max-width: 1200px; /* Largeur maximale du conteneur des listings */
     margin: 0 auto; /* Centrer le conteneur */
@@ -51,6 +22,8 @@
     padding-top: 100%; /* Hauteur égale à la largeur pour créer des carrés */
     position: relative; /* Nécessaire pour positionner le contenu à l'intérieur */
     overflow: hidden; /* Pour s'assurer que le contenu ne dépasse pas */
+    background: $redColor;
+    border-radius: 10px;
   }
   
   .listing a {
@@ -64,15 +37,22 @@
     height: 100%;
     text-decoration: none;
     color: #333;
-    border: 1px solid #ccc;
+    border: 1px solid orange;
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
   
-  .listing a:hover {
-    background-color: #f0f0f0;
-  }
+  // .listing a:hover {
+  //   background-color: #f0f0f0;
+  // }
   
-  .listing a h3 {
+  .listing a h2 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
     margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
   }

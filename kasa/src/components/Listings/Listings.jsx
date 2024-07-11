@@ -5,7 +5,7 @@ import './Listings.scss';
 
 function Listings() {
   return (
-    <div className='listings-wrapper'>Logements
+    <div className='listings-wrapper'>
         <ul className='listings-container'>
             {listListings.map((listing) => (
                 <li key={listing.id} className='listing'>

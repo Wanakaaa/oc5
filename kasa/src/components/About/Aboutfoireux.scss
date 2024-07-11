@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+
+// .about-sections {
+//     outline: 2px solid red;
+//     padding: 20px;
+// }
+
+// .about-section {
+//     border: 2px solid purple;
+//     list-style-type: none;
+//     width: 80%;
+
+// } 
+.blabla {
+    background-color: blue;
+    
+}
+
+.about-sections {
+    border: 2px solid black;
+    list-style-type: none; /* Supprime les puces des éléments de liste */
+    padding: 0; /* Supprime le padding par défaut de la liste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Supprime les marges par défaut */
+
+  }
+  
+  .about-section {
+    border: 2px solid purple;
+    width: 80%;
+    margin: 10px 0; /* Ajoute de l'espacement vertical entre les éléments */
+    padding: 10px; /* Ajoute de l'espacement interne */
+    background: $redColor;
+    color: $whiteColor;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        border: 2px solid green;
+    }
+
+    img {
+        border: 2px solid black;
+        cursor: pointer;
+        transition: transform 0.3s; /* Ajoute une transition pour la rotation */
+    }
+    img.rotate {
+        transform: rotate(-180deg); /* Applique la rotation */
+      }
+  }
