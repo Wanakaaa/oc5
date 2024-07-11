@@ -2,9 +2,13 @@
 
 .accordion-container {
     border: 2px solid green;
+    padding: 5px;
+
 
     .about-title{
+
         border: 2px solid purple;
+        padding: 5px;
         background: $redColor;
         display: flex;
         justify-content: space-between;

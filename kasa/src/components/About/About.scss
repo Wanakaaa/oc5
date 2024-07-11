@@ -1,8 +1,9 @@
 @import '../../styles/variables';
 
-.title {
-    background: $redColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
+ul {
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 2px solid blue;
 }

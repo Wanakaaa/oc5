@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import chevron from '../../assets/chevron.svg'
 import './Accordion.scss'
 import AboutDisplay from './AboutDisplay';

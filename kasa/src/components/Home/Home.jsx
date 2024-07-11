@@ -12,7 +12,8 @@ function Home() {
         <Banner image={image}>Chez vous, partout et ailleurs</Banner>
       </div>
       <div className='listings'>
-        <Listings />
+          <Listings 
+          />
       </div> 
     </div>
   )

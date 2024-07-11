@@ -1,6 +1,4 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
-import { Data } from './Data'
 import './About.scss'
 import aboutImg from '../../assets/aboutImg.png'
 import Banner from '../Home/Banner'
@@ -41,47 +39,16 @@ function About() {
             <Banner image={aboutImg}/>
           </div>
           <ul>
-            {accordionData.map((data) => (
+            {accordionData.map(({title, content}) => (
               <Accordion 
-              key={data.title}
-              title = {data.title}
-              content = {data.content}
+              key={title}
+              title = {title}
+              content = {content}
             />
             ))}
           </ul>
         </div>
       );
     };
-
-
-// function About() {
-//     const [count, setCount] = useState(0)
-//     const [isOpen, setIsOpen] = useState(false)
-
-//     function increment() {
-//         setCount(count + 1)
-//     }
-
-//     function toggle() {
-//         setIsOpen(!isOpen)
-//     }
-
-// //ajouter condition pour dire si on affiche ou non une div
-
-
-//   return (
-//     <div>
-//         <div><Banner image={aboutImg}/></div>
-//         <Accordion data={Data}/>
-
-//         <button onClick={increment}>click</button>
-//         <div>Le bouton est {count}</div>
-
-//         <button onClick={toggle}>click</button>
-//         <div>Le bouton est {isOpen.toString()}</div>
-//         {isOpen && <div>Blabla</div>}
-//     </div>
-//   )
-// }
 
 export default About
